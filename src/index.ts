@@ -13,6 +13,7 @@ export function ViteTips(rawOptions: Partial<ViteTipsOptions> = {}): Plugin {
 
   return {
     name: 'vite-plugin-tips',
+    apply: 'serve',
     config: () => ({
       optimizeDeps: {
         exclude: ['vite-plugin-tips'],
